@@ -20,7 +20,7 @@ document.getElementById('discover').addEventListener('click',function(event){
 
 document.getElementById('completed-1').addEventListener('click',function(event){
     event.preventDefault();
-    alert('You have successfully completed the task');
+    alert('Board updated successfully');
     document.getElementById('completed-1').disabled=true;
     const totalTask = document.getElementById('23').innerText;
     const convertedTotalTask = parseInt(totalTask);
@@ -35,7 +35,7 @@ document.getElementById('completed-1').addEventListener('click',function(event){
 
 document.getElementById('completed-2').addEventListener('click',function(event){
     event.preventDefault();
-    alert('You have successfully completed the task');
+    alert('Board updated successfully');
     document.getElementById('completed-2').disabled=true;
     const totalTask = document.getElementById('23').innerText;
     const convertedTotalTask = parseInt(totalTask);
@@ -51,7 +51,7 @@ document.getElementById('completed-2').addEventListener('click',function(event){
 
 document.getElementById('completed-3').addEventListener('click',function(event){
     event.preventDefault();
-    alert('You have successfully completed the task');
+    alert('Board updated successfully');
     document.getElementById('completed-3').disabled=true;
     const totalTask = document.getElementById('23').innerText;
     const convertedTotalTask = parseInt(totalTask);
@@ -67,7 +67,7 @@ document.getElementById('completed-3').addEventListener('click',function(event){
 
 document.getElementById('completed-4').addEventListener('click',function(event){
     event.preventDefault();
-    alert('You have successfully completed the task');
+    alert('Board updated successfully');
     document.getElementById('completed-4').disabled=true;
     const totalTask = document.getElementById('23').innerText;
     const convertedTotalTask = parseInt(totalTask);
@@ -83,7 +83,7 @@ document.getElementById('completed-4').addEventListener('click',function(event){
 
 document.getElementById('completed-5').addEventListener('click',function(event){
     event.preventDefault();
-    alert('You have successfully completed the task');
+    alert('Board updated successfully');
     document.getElementById('completed-5').disabled=true;
     const totalTask = document.getElementById('23').innerText;
     const convertedTotalTask = parseInt(totalTask);
@@ -99,8 +99,8 @@ document.getElementById('completed-5').addEventListener('click',function(event){
 
 document.getElementById('completed-6').addEventListener('click',function(event){
     event.preventDefault();
-    alert('You have successfully completed the task');
-    alert('congratulation! you have successfully completed all the task')
+    alert('Board updated successfully');
+    alert('Congrates!!! You have completed all the current task')
     document.getElementById('completed-6').disabled=true;
     const totalTask = document.getElementById('23').innerText;
     const convertedTotalTask = parseInt(totalTask);
