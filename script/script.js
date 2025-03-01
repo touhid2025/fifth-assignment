@@ -100,7 +100,7 @@ document.getElementById('completed-5').addEventListener('click',function(event){
 document.getElementById('completed-6').addEventListener('click',function(event){
     event.preventDefault();
     alert('You have successfully completed the task');
-    alert('congratulation! you have completed all the task')
+    alert('congratulation! you have successfully completed all the task')
     document.getElementById('completed-6').disabled=true;
     const totalTask = document.getElementById('23').innerText;
     const convertedTotalTask = parseInt(totalTask);
@@ -113,3 +113,11 @@ document.getElementById('completed-6').addEventListener('click',function(event){
 
 })
 
+// for challange mark
+function showCurrentDate() {
+    const currentDate = new Date();
+    const options = { weekday: 'short', month: 'long', day: 'numeric', year: 'numeric' };
+    const dateString = currentDate.toLocaleDateString('en-US', options);
+    document.getElementById('date').textContent = dateString;
+}
+showCurrentDate();

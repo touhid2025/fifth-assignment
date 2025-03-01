@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Date and Day</title>
+</head>
+<body>
+    <h1>Current Date and Day</h1>
+    <p id="date"></p>
+
+    <script>
+        function showCurrentDate() {
+            const currentDate = new Date(); // বর্তমান তারিখ ও সময়
+            const options = { weekday: 'short', month: 'long', day: 'numeric', year: 'numeric' };
+
+            // সময় ফরম্যাট করা
+            const dateString = currentDate.toLocaleDateString('en-US', options);
+
+            // তারিখ প্রদর্শন
+            document.getElementById('date').textContent = dateString;
+        }
+
+        // পেজ লোড হলে তারিখ দেখান
+        showCurrentDate();
+    </script>
+</body>
+</html>
