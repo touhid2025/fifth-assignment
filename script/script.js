@@ -12,12 +12,18 @@ const colors = ["#FF5733", "#33FF57", "#3357FF"];
             }
         });
 
+// history deleted button
+document.getElementById('clearBtn').addEventListener('click',function(){
+    document.getElementById('history').innerHTML = '';
+})
+
 // discover something new today (button)
 document.getElementById('discover').addEventListener('click',function(event){
     event.preventDefault();
     window.location.href="./blog.html"
 })
 
+// all completed button
 document.getElementById('completed-1').addEventListener('click',function(event){
     event.preventDefault();
     alert('Board updated successfully');
@@ -30,6 +36,14 @@ document.getElementById('completed-1').addEventListener('click',function(event){
     const convertedTask = parseInt(task);
     const subtract = convertedTask - 1;
     document.getElementById('06').innerText=subtract;
+
+    const currentTime =new Date().toLocaleTimeString();
+    const container = document.getElementById('history');
+    const div = document.createElement('div');
+    div.innerHTML=`<div class="m-2 p-2 rounded-2xl bg-slate-300">
+    <p>You have completed the task <b>Fix Mobile Button Issue<b/> at ${currentTime}</p>
+</div>`
+    container.appendChild(div)
 
 })
 
@@ -45,6 +59,14 @@ document.getElementById('completed-2').addEventListener('click',function(event){
     const convertedTask = parseInt(task);
     const subtract = convertedTask - 1;
     document.getElementById('06').innerText=subtract;
+
+    const currentTime =new Date().toLocaleTimeString();
+    const container = document.getElementById('history');
+    const div = document.createElement('div');
+    div.innerHTML=`<div class="m-2 p-2 rounded-2xl bg-slate-300">
+    <p>You have completed the task <b>Add Dark Mode<b/> at ${currentTime}</p>
+</div>`
+    container.appendChild(div)
 
 })
 
@@ -62,6 +84,14 @@ document.getElementById('completed-3').addEventListener('click',function(event){
     const subtract = convertedTask - 1;
     document.getElementById('06').innerText=subtract;
 
+    const currentTime =new Date().toLocaleTimeString();
+    const container = document.getElementById('history');
+    const div = document.createElement('div');
+    div.innerHTML=`<div class="m-2 p-2 rounded-2xl bg-slate-300">
+    <p>You have completed the task <b>Optimize  Home page<b/>  at ${currentTime}</p>
+</div>`
+    container.appendChild(div)
+
 })
 
 
@@ -77,6 +107,14 @@ document.getElementById('completed-4').addEventListener('click',function(event){
     const convertedTask = parseInt(task);
     const subtract = convertedTask - 1;
     document.getElementById('06').innerText=subtract;
+
+    const currentTime =new Date().toLocaleTimeString();
+    const container = document.getElementById('history');
+    const div = document.createElement('div');
+    div.innerHTML=`<div class="m-2 p-2 rounded-2xl bg-slate-300">
+    <p>You have completed the <b>task Add new emoji🤲 at ${currentTime}<b/></p>
+</div>`
+    container.appendChild(div)
 
 })
 
@@ -94,6 +132,14 @@ document.getElementById('completed-5').addEventListener('click',function(event){
     const subtract = convertedTask - 1;
     document.getElementById('06').innerText=subtract;
 
+    const currentTime =new Date().toLocaleTimeString();
+    const container = document.getElementById('history');
+    const div = document.createElement('div');
+    div.innerHTML=`<div class="m-2 p-2 rounded-2xl bg-slate-300">
+    <p>You have completed the task <b>Integrate OpenAI API<b/> at ${currentTime}</p>
+</div>`
+    container.appendChild(div)
+
 })
 
 
@@ -110,6 +156,15 @@ document.getElementById('completed-6').addEventListener('click',function(event){
     const convertedTask = parseInt(task);
     const subtract = convertedTask - 1;
     document.getElementById('06').innerText=subtract;
+
+    const currentTime =new Date().toLocaleTimeString();
+    const container = document.getElementById('history');
+    const div = document.createElement('div');
+    div.innerHTML=`<div class="m-2 p-2 rounded-2xl bg-slate-300">
+    <p>You have completed the task <b>Improve Job searching <b/>  at ${currentTime}</p>
+</div>`
+    container.appendChild(div)
+
 
 })
 
