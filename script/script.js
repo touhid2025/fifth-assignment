@@ -1,17 +1,3 @@
-// color changing button
-const colors = ["#FF5733", "#33FF57", "#3357FF"]; 
-        let index = 0; 
-        document.getElementById("colorButton").addEventListener("click", function(event) {
-            event.preventDefault();
-            if (index < colors.length) {
-                document.body.style.backgroundColor = colors[index];
-                index++;
-            } else {
-                document.body.style.backgroundColor = "";
-                index = 0; 
-            }
-        });
-
 // history deleted button
 document.getElementById('clearBtn').addEventListener('click',function(){
     document.getElementById('history').innerHTML = '';
@@ -44,8 +30,8 @@ document.getElementById('completed-1').addEventListener('click',function(event){
     <p>You have completed the task <b>Fix Mobile Button Issue<b/> at ${currentTime}</p>
 </div>`
     container.appendChild(div)
-
 })
+
 
 document.getElementById('completed-2').addEventListener('click',function(event){
     event.preventDefault();
@@ -67,7 +53,6 @@ document.getElementById('completed-2').addEventListener('click',function(event){
     <p>You have completed the task <b>Add Dark Mode<b/> at ${currentTime}</p>
 </div>`
     container.appendChild(div)
-
 })
 
 
@@ -91,7 +76,6 @@ document.getElementById('completed-3').addEventListener('click',function(event){
     <p>You have completed the task <b>Optimize  Home page<b/>  at ${currentTime}</p>
 </div>`
     container.appendChild(div)
-
 })
 
 
@@ -115,7 +99,6 @@ document.getElementById('completed-4').addEventListener('click',function(event){
     <p>You have completed the <b>task Add new emoji🤲 at ${currentTime}<b/></p>
 </div>`
     container.appendChild(div)
-
 })
 
 
@@ -139,7 +122,6 @@ document.getElementById('completed-5').addEventListener('click',function(event){
     <p>You have completed the task <b>Integrate OpenAI API<b/> at ${currentTime}</p>
 </div>`
     container.appendChild(div)
-
 })
 
 
@@ -164,11 +146,12 @@ document.getElementById('completed-6').addEventListener('click',function(event){
     <p>You have completed the task <b>Improve Job searching <b/>  at ${currentTime}</p>
 </div>`
     container.appendChild(div)
-
-
 })
 
+
 // for challange mark
+
+// current date
 function showCurrentDate() {
     const currentDate = new Date();
     const options = { weekday: 'short', month: 'long', day: 'numeric', year: 'numeric' };
@@ -176,3 +159,17 @@ function showCurrentDate() {
     document.getElementById('date').textContent = dateString;
 }
 showCurrentDate();
+
+// color changing button
+const colors = ["#FF5733", "#33FF57", "#3357FF"]; 
+        let index = 0; 
+        document.getElementById("colorButton").addEventListener("click", function(event) {
+            event.preventDefault();
+            if (index < colors.length) {
+                document.body.style.backgroundColor = colors[index];
+                index++;
+            } else {
+                document.body.style.backgroundColor = "";
+                index = 0; 
+            }
+        });
